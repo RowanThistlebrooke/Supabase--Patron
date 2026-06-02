@@ -1,0 +1,31 @@
+Make these 4 changes to my dashboard suite. Keep the existing theme/styling, and DO NOT remove or break the Supabase sync logic in db.js.
+
+1. REMOVE THE "CLOUD SYNC" BUTTON.
+   There's a floating "☁ Cloud sync" pill injected on the pages by cloud-sync.js.
+   Remove that visible button and its settings panel/overlay everywhere it appears.
+   The app already auto-connects to Supabase via the baked-in keys in db.js, so this
+   manual button is not needed. Only remove the UI — leave db.js sync untouched.
+
+2. FIX THE ONBOARDING POPUP + MOVE IT TO A SETTINGS GEAR.
+   The "Set up your dashboard" modal (uses localStorage key 'patron_profile_v1',
+   sets onboarded:true) currently reappears on every refresh even after I've completed it.
+   - Only auto-open it for brand-new users with NO saved profile. If a profile exists
+     (onboarded is true), never auto-open it again on load/refresh.
+   - Add a settings gear (⚙) button in the TOP-RIGHT of the main dashboard (index.html)
+     that opens that same form on demand (edit-profile mode).
+
+3. REMOVE THE DUPLICATE WEIGHT LOG + PROGRESS PHOTOS.
+   The weight quick-log ("Log your first weight…", Enter weight) and the Progress Photos
+   block are duplicated. Keep them ONLY on the dedicated Progress page and remove the
+   duplicate copy from wherever else it shows (e.g. the dashboard / any second spot).
+   Don't break the Progress page itself.
+
+4. MAKE THE PROGRESS "TRAINING / LIFTS" DATA REAL (from Gym).
+   On the Progress page, the "TRAINING · LAST 90 DAYS" lifts and "COMPOSITION" sections
+   are fake sample data. Wire them to the REAL Gym workout data (Gym stores its state in
+   the cloud app_state row 'po-coach' / its localStorage). Show actual lifts/PRs from Gym.
+   Also surface that real lift progress in the Gym page's scrolling "ticker" bar (the
+   stock-ticker / nasdaq-style strip). If no Gym data exists yet, HIDE those sections
+   instead of showing sample numbers.
+
+When done, give me a short bullet summary of what changed in each file. Don't commit or push — I'll review first.
