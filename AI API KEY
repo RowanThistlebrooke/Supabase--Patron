@@ -1,0 +1,8 @@
+How to get an Anthropic API key
+Go to https://console.anthropic.com
+Sign in (or sign up) — use the same account you'd use for billing.
+In the left sidebar (or top-right menu), click API Keys
+Direct link: https://console.anthropic.com/settings/keys
+Click Create Key (top right).
+Give it a name (e.g. "Liam app") and click Create.
+Copy the key immediately — it starts with sk-ant-.... You can only see it once. If you lose it, you just make a new one.
