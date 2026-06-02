@@ -1,0 +1,14 @@
+Vercel environment variable names (paste into the "Key" field, one each):
+
+Sreach bar SUPABASE
+
+SUPABASE_URL (URL KEY)
+
+SUPABASE_ANON_KEY (Copy anonymous API key)
+
+Go to vercel > Environment Variables 
+
+UPABASE_URL (URL KEY)
+
+UPABASE_ANON_KEY (Copy anonymous API key)
+
