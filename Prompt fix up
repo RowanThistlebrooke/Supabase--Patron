@@ -28,4 +28,15 @@ Make these 4 changes to my dashboard suite. Keep the existing theme/styling, and
    stock-ticker / nasdaq-style strip). If no Gym data exists yet, HIDE those sections
    instead of showing sample numbers.
 
+Rebrand this app's display name to "YOUR NAME".
+
+- Replace every user-facing occurrence of the current brand name with "YOUR NAME"
+  across all .html, .js, .css, .json, .webmanifest and .md files (page titles,
+  the dashboard header, the "← back" links, the live tickers — everything visible).
+- Don't touch the nested duplicate folder if one exists; only edit the tracked
+  top-level files.
+- When done, commit the change and push it to the `main` branch so Vercel
+  redeploys automatically.
+
+
 When done, give me a short bullet summary of what changed in each file. Don't commit or push — I'll review first.
