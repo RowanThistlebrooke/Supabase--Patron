@@ -6,3 +6,13 @@ Direct link: https://console.anthropic.com/settings/keys
 Click Create Key (top right).
 Give it a name (e.g. "Liam app") and click Create.
 Copy the key immediately — it starts with sk-ant-.... You can only see it once. If you lose it, you just make a new one.
+
+
+
+
+Fiannce api key
+
+To get your own YouTube counts working now
+Get a free key: console.cloud.google.com → enable "YouTube Data API v3" → Credentials → Create API key.
+Creator page → Accounts → Edit → paste into YouTube API key → Save key.
+Add your YouTube @handle → tap ↻.
