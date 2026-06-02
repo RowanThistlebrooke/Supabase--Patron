@@ -1,0 +1,9 @@
+mkdir -p ~/.claude && cat > ~/.claude/settings.json <<'EOF'
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push:*)"
+    ]
+  }
+}
+EOF
